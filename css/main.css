@@ -79,6 +79,10 @@ h3 {
     text-decoration: none;
     background: transparent;
 }
+.navbar-brand{
+    max-width: 100%;
+    height: auto;
+}
 
 a {
     text-decoration: none;
@@ -165,7 +169,7 @@ section {
     color: blue;
 }
 
-.caption .btn-start {
+/*.caption .btn-start {
     color: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -178,7 +182,7 @@ section {
 .caption .btn-start:hover {
     color: #fff
 }
-
+*/
 .carousel-fade .carousel-inner .item {
     opacity: 0;
     -webkit-transition-property: opacity;
@@ -258,7 +262,7 @@ section {
     right: 30px
 }
 
-#home-slider .fa-angle-down {
+#home-slider .fa-angle-double-down {
     position: absolute;
     left: 50%;
     bottom: 50px;
@@ -269,8 +273,9 @@ section {
     font-size: 24px;
     line-height: 24px;
     z-index: 999;
-    -webkit-animation: bounce 3000ms infinite;
-    animation: bounce 3000ms infinite;
+    color:#C21437 ;
+    -webkit-animation: bounce 5000ms infinite;
+    animation: bounce 5000ms infinite;
 }
 
 .navbar-right li a {
@@ -337,7 +342,13 @@ section {
 **************************/
 #about-us {
     background-image: url(../images/about-bg.jpg);
+    padding: 0px;
+}
+#about-us .overlay{
+    width: 100%;
+    height: 100%;
     padding: 60px 0;
+    background-color: rgba(0,0,0,0.5);
 }
 
 #about-us h2 {
@@ -380,7 +391,7 @@ section {
 /*************************
 ********portfolio CSS*****
 **************************/
-.certificate-css i{display: inline-block;font-size:larger;margin: 0px 4px;color: #ff69b4;}
+.certificate-css i{display: inline-block;font-size:larger;margin: 0px 4px;color:#C21437 ;}
 .certificate-css h2{display: inline-block;}
 .certificate-css h3 {
     margin-top: 50px;
@@ -605,8 +616,14 @@ section {
 #features {
     text-align: center;
     background-image: url(../images/features-bg.jpg);
+    padding: 0px;
 }
-
+#features .overlay{
+    padding: 60px 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
 #features i {
     font-size: 48px;
     display: block;
@@ -881,9 +898,14 @@ section {
 
 #contact-us {
     background-image: url(../images/contact-bg.jpg);
-    padding-bottom: 90px;
+    padding: 0px;
 }
-
+#contact-us .overlay{
+    padding-bottom: 90px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
 #contact-us .heading {
     padding-top: 95px;
 }
@@ -975,31 +997,45 @@ ul.address {
 #footer .social-icons ul li a:hover {
     color: #fff
 }
-
-#footer .social-icons ul li a.envelope:hover {
-    background-color: #CECB26;
+.pulse2{
+	animation-name: pulse2;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
 }
+@keyframes pulse2{
+0%{
+	transform:scale(1.1);
+}
+50% {
+    transform: scale(0.8);
+}
+100% {
+    transform: scale(1);
+}
+}
+.pullright a{
 
+}
+/*
 #footer .social-icons ul li a.facebook:hover {
-    background-color: #3b5999;
+    background-color: floralwhite;
 }
 
 #footer .social-icons ul li a.twitter:hover {
-    background-color: #2ac6f7;
-}
-
-#footer .social-icons ul li a.dribbble:hover {
-    background-color: #ff5b92;
+    background-color: floralwhite;
 }
 
 #footer .social-icons ul li a.linkedin:hover {
-    background-color: #036dc0;
+    background-color: floralwhite;
 }
-
-#footer .social-icons ul li a.tumblr:hover {
-    background-color: #ff6b00;
+#footer .social-icons ul li a.googleplus:hover {
+    background-color: floralwhite;
 }
-
+#footer .social-icons ul li a.github:hover {
+    background-color: floralwhite;
+}
+*/
 /*Presets*/
 
 
